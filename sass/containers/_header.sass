@@ -1,0 +1,34 @@
+.header
+    position: absolute
+    left: 0
+    right: 0
+    top: 58px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 80px
+    &__logo-wrapper
+        display: flex
+        flex-grow: 1
+        justify-content: flex-start
+.logo
+    @include Logo
+.nav
+    &-item
+        @include font_xs
+        color: inherit
+        &:not(:last-child)
+            margin-right: 40px       
+.account
+    @include font_s
+    color: inherit
+    display: flex
+    &-icon
+        width: 24px
+        height: 24px
+        padding: 2px
+        margin-right: 8px
+    &-wrapper
+        display: flex
+        flex-grow: 1
+        justify-content: flex-end

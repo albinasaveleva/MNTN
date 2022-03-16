@@ -1,0 +1,33 @@
+.footer
+    margin-bottom: 120px
+    display: flex
+    justify-content: center
+    &__container
+        display: flex
+        justify-content: space-between
+    &__logo-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        margin-right: 25px
+    &__nav-wrapper
+        max-width: 566px
+        width: 40%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__nav
+        display: flex
+        flex-direction: column
+        .title
+            @include font_l
+            color: $Accent
+            margin-bottom: 30px
+    &__nav-item
+        font-weight: 500
+        letter-spacing: .5px
+        &:not(:last-child)
+            margin-bottom: 28px
+.logo-subtitle
+    margin-top: 24px
+    @include font_m

@@ -1,0 +1,151 @@
+@media ( min-width: 1920px )
+    .container
+        max-width: 1460px
+    .hero__container
+        max-width: 100%
+@media (max-width: 1200px)
+    .hero
+        &::before
+            bottom: -450px
+        &__container
+            padding: 0 60px
+            padding-top: 200px
+        &__content
+            width: 80%
+            .title
+                font-size: 68px
+    .header
+        padding: 0 60px
+    .content
+        // padding-top: 150px
+        padding-bottom: 150px
+        &::before
+            height: 450px
+    .step
+        .step-content
+            padding-top: 65px
+            padding-bottom: 65px
+            padding-left: 95px
+            margin-right: 50px
+            &::before
+                height: 150px
+                font-size: 150px
+                line-height: 150px
+            .title
+                font-size: 45px
+                margin-right: 0
+        &:not(:last-child)
+            margin-bottom: 150px
+        &:nth-child(2n) .step-content
+            margin-left: 50px
+    .footer
+        &__container
+            padding: 0
+        &__nav-wrapper
+            flex-direction: column
+            width: auto
+        &__nav:not(:last-child)
+            margin-bottom: 24px
+@media (max-width: 992px)
+    .hero__content
+        margin-left: 25px
+    .step
+        flex-direction: column
+        .step-content
+            margin-right: 0
+            margin-bottom: 30px
+        &:not(:last-child)
+            margin-bottom: 100px
+        &:nth-child(2n)
+            .step-content
+                order: 0
+                margin-left: 0
+        .title
+            font-size: 40px
+        &-image
+            width: 100%
+
+@media (max-width: 768px)
+    .container
+        width: 100%
+        padding-left: 50px
+        padding-right: 50px
+    .header
+        top: 25px
+        padding: 0 25px
+        &__nav-wrapper
+            display: none
+    .hero
+        &::before
+            bottom: -300px
+        &__container
+            padding-top: 150px
+        &__content
+            width: auto
+            .title
+                font-size: 50px
+        &__slider
+            display: none
+    .content
+        // padding-top: 100px
+        padding-bottom: 100px
+        &::before
+            height: 300px
+
+    .footer
+        margin-bottom: 50px
+        &__container
+            flex-direction: column
+        &__logo-wrapper
+            margin-bottom: 30px
+        &__nav-wrapper
+            width: 100%
+
+@media (max-width: 576px)
+    .container
+        padding-left: 25px
+        padding-right: 25px
+    .tag
+        font-size: 15px
+        margin-bottom: 15px
+        padding-left: 82px
+        &::before
+            width: 50px
+    .arrow-btn
+        font-size: 15px
+    .account
+        font-size: 14px
+    .hero
+        &__socials
+            span
+                font-size: 15px
+        &__content
+            .title
+                font-size: 35px
+    .content
+        // padding-top: 50px
+        padding-bottom: 50px
+    .step
+        .step-content
+            padding-top: 45px
+            padding-bottom: 45px
+            padding-left: 65px
+            &::before
+                height: 100px
+                font-size: 100px
+                line-height: 100px
+            .title
+                font-size: 30px
+            .preview
+                font-size: 15px
+    .footer
+        &__nav
+            .title
+                font-size: 18px
+            &-item
+                font-size: 15px
+    .logo-subtitle
+        font-size: 15px
+
+
+//  576px, 768px, 992px, and 1200px

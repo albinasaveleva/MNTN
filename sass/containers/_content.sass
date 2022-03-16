@@ -1,0 +1,74 @@
+.content
+    position: relative
+    padding-top: 66px
+    padding-bottom: 200px
+    display: flex
+    justify-content: center
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 530px
+        content: ""
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)
+
+.step
+    display: flex
+    align-items: center
+    justify-content: center
+    .step-content
+        position: relative
+        margin-right: 114px
+        padding-top: 110px
+        padding-bottom: 110px
+        &::before
+            position: absolute
+            left: 0
+            top: 0
+            display: block
+            width: auto
+            height: 240px
+            @include Step-pseudo
+        .tag
+            padding-left: 95px
+            margin-bottom: 25px
+    &:not(:last-child)
+        margin-bottom: 200px
+    &:nth-child(2n)
+        .step-content
+            order: 2
+            margin-right: 0
+            margin-left: 114px
+    &:nth-child(1)
+        .step-content::before
+            content: "01"
+    &:nth-child(2)
+        .step-content::before
+            content: "02"
+    &:nth-child(3)
+        .step-content::before
+            content: "03"
+    &-content
+        padding-left: 150px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        &__tag
+            margin-bottom: 27px
+        .title
+            @include Header_l
+            margin-bottom: 30px
+            margin-right: 77px
+        .preview
+            @include font_m
+            margin: 0
+            margin-bottom: 27px
+            color: $White
+    &-image
+        max-width: 566px
+        width: 40%
+        height: auto
+        object-fit: cover  
+        z-index: 999 

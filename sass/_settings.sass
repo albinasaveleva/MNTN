@@ -1,0 +1,47 @@
+*
+    box-sizing: border-box
+    color: $White
+body
+    background-color: #0B1D26
+a
+    text-decoration: none
+    cursor: pointer
+button
+    cursor: pointer
+.container
+    width: 80%
+.tag
+    padding-left: 104px
+    margin-bottom: 28px
+    position: relative
+    @include tag
+    &::before
+        content: ""
+        display: block
+        height: 2px
+        width: 72px
+        margin-right: 32px
+        background-color: $Accent
+        position: absolute
+        left: 0
+        top: 10px
+.arrow-btn
+    display: flex
+    align-items: center
+    @include font_s
+    background-color: transparent
+    border: none
+    outline: none
+    padding: 0
+    &_accent
+        color: $Accent
+    &-arrow
+        margin-left: 16px
+        &_right
+            background-image: url(../assets/icons/arrow_right.svg)
+            height: 16px
+            width: 24px
+        &_down
+            background-image: url(../assets/icons/arrow_down.svg)
+            height: 24px
+            width: 16px
